@@ -1,9 +1,10 @@
+# panel.py
 import bpy
 
 class BLENDMSH_PT_Panel(bpy.types.Panel):
     bl_idname = 'BLENDMSH_PT_panel'
-    bl_label = 'blendmsh'
-    bl_category = 'blendmsh'
+    bl_label = 'Blendmsh'
+    bl_category = 'Blendmsh'
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
 
@@ -11,52 +12,17 @@ class BLENDMSH_PT_Panel(bpy.types.Panel):
         layout = self.layout
         scene = context.scene
 
-        row = layout.row()
-        rowsub = layout.row(align=True)
-        rowsub.prop(scene.blendmsh, 'workspace_path')
+        layout.prop(scene.blendmsh, 'workspace_path', text="Workspace Path")
 
-        col = layout.column()
-        col.operator('blendmsh.meshinit', text='Initialize')
+        layout.operator('blendmsh.meshinit', text='Initialize Mesh')
 
-        row = layout.row()
-        row.label(text=" ")
+        layout.prop(scene.blendmsh, "n_physicalgroups", text="Physical Groups")
+        layout.operator('blendmsh.physicalgroups', icon='ADD', text="Add Groups")
 
-        rowsub = layout.row(align=True)
-        rowsub.prop(scene.blendmsh, "n_physicalgroups")
-        rowsub.operator('blendmsh.physicalgroups', icon='ADD')
+        layout.prop(scene.blendmsh, "element_order", text="Element Order")
+        layout.prop(scene.blendmsh, 'algorithm', text="Meshing Algorithm")
+        layout.prop(scene.blendmsh, "cl_max", text="Element Size")
+        layout.prop(scene.blendmsh, "mesh_dimension", text="Mesh Dimension")
+        layout.prop(scene.blendmsh, 'output_file_format', text="Output Format")
 
-        row = layout.row()
-        row.label(text=" ")
-
-        row = layout.row(align=True)
-        row.prop(scene.blendmsh, "element_order", icon='NONE', expand=True,
-                    slider=True, toggle=False, icon_only=False, event=False,
-                    full_event=False, emboss=True)
-
-        rowsub = layout.row(align=True)
-        rowsub.prop(scene.blendmsh, 'algorithm')
-
-        rowsub = layout.row(align=True)
-        rowsub.prop(scene.blendmsh, "cl_max")
-
-        rowsub = layout.row(align=True)
-        rowsub.prop(scene.blendmsh, "mesh_dimension", expand=True, slider=True,
-                    toggle=False, icon_only=False, emboss=True)
-
-        row = layout.row(align=True)
-        row.prop(scene.blendmsh, 'output_file_format')
-
-        row = layout.row()
-        row.label(text=" ")
-
-        col = layout.column()
-        col.operator('blendmsh.meshproc', text='Mesh')
-
-        row = layout.row()
-        row.label(text=" ")
-
-        row = layout.row(align=True)
-        row.alignment = 'RIGHT'
-        row.label(text="Made with")
-        row.label(icon='FUND')
-
+        layout.operator('blendmsh.meshproc', text='Generate Mesh')
