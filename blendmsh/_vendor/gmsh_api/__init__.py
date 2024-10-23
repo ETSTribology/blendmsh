@@ -5,8 +5,8 @@ import logging
 import os
 import numpy as np
 import pandas as pd
-from .. import gmsh_api
-from ..gmsh_api import gmsh as ___vendorize__0
+from .... import gmsh_api
+from ....gmsh_api import gmsh as ___vendorize__0
 gmsh_api.gmsh = ___vendorize__0
 
 class Mesh():
