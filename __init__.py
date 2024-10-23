@@ -24,20 +24,16 @@
 #################################################
 
 bl_info = {
-    "name" : "blendmsh",
-    "author" : "Senthur Raj",
-    "description" : "Blendmsh is a bridge between Blender 2.80+ and Gmsh, a fast and light 3D finite element mesh generator.",
-    "blender" : (2, 80, 0),
-    "version" : (1, 1, 0),
-    "location" : "View3D",
-    "warning" : "",
-    "wiki_url" : "https://github.com/blender-for-science/blendmsh",
-    "tracker_url" : "https://github.com/blender-for-science/blendmsh",
-    "category" : "Mesh"
+    "name": "Blendmsh",
+    "author": "Senthur Raj",
+    "description": "Blendmsh is a bridge between Blender and Gmsh, a 3D finite element mesh generator.",
+    "blender": (4, 2, 0),
+    "version": (1, 1, 0),
+    "location": "View3D > Sidebar > Blendmsh",
+    "category": "Mesh",
 }
 
 import bpy
-
 from .properties import BlendmshProperties
 from .panel import BLENDMSH_PT_Panel
 from .processor import BLENDMSH_OT_Meshinit, BLENDMSH_OT_Meshproc, BLENDMSH_OT_Physicalgroups
