@@ -12,7 +12,7 @@ Blendmsh is a bridge between Blender 2.80+ and Gmsh, a fast and light 3D finite 
 ## Installation
 ![Gmsh prompt](documentation/blendmshprompt.png)
 
-*   Download the latest release as a '.zip' file and head over to Blender 2.80+.
+*   Download the latest release as a '.zip' file and head over to Blender 4.2.0.
 *   Go to **Edit->Preferences->Add-on->Install** and point to the downloaded '.zip' file.
 *   Make sure that the installed add-on is enabled.
 *   Once enabled, the add-on looks for Gmsh module, it prompts for an installation if Gmsh module is not found. Kindly install it either via the prompt or manually.
