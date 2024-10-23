@@ -1,0 +1,8 @@
+# Configuration for vendorizing dependencies
+target = "_vendor"
+
+# List of packages to vendorize
+packages = [
+    "gmsh==4.13.1",
+    "gmsh-api==4.13.0"
+]

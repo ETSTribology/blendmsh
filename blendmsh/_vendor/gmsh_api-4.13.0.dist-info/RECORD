@@ -1,0 +1,12 @@
+gmsh_api-4.13.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+gmsh_api-4.13.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gmsh_api-4.13.0.dist-info/METADATA,sha256=d5wPhNAMIKrd4x8a_8mfbiLcJEB9YNdPQoaVfnwdNZ8,3353
+gmsh_api-4.13.0.dist-info/RECORD,,
+gmsh_api-4.13.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmsh_api-4.13.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+gmsh_api-4.13.0.dist-info/top_level.txt,sha256=qfX-i2ibil--URz-QNMxu_lMzDkwNI7djgzihxflN_w,9
+gmsh_api/__init__.py,sha256=plReDArYAFU-lpMRZOO_GnJqdAkf8hVawL7V3yq2yhs,2493
+gmsh_api/__pycache__/__init__.cpython-310.pyc,,
+gmsh_api/__pycache__/gmsh.cpython-310.pyc,,
+gmsh_api/gmsh.py,sha256=KuTftikF9E3XIkMzTYP2E17ue730r7WftKeJdJ8qJR0,416770
+gmsh_api/libgmsh.so,sha256=Or8KYn4wfEl1nIVR6YONK5tXFan9gcDNywUApv_RIbQ,81062376
